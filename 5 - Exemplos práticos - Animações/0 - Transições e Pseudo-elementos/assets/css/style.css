@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.list {
+    background-color: #2b68c5;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 15px 15px 15px rgb(162, 203, 236);
+}
+
+.list li {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 32px;
+    margin-bottom: 4px;
+    transition: background 1s;
+}
+
+
+.list li:hover {
+    background-color: hsl(224, 28%, 90%);
+    color: black;
+}
+
+.list input {
+    accent-color: #3359d5;
+}
+
+.list input:checked + span {
+    text-decoration: line-through;
+}
+
+.list li:has(input:checked) {
+    background-color: #efefef;
+    color: #3359d5;
+    border-radius: 4px;
+}

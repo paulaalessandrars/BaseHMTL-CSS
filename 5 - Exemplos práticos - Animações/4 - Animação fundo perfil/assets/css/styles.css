@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&display=swap);
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(-45deg, #0b22d7, #0fcd3f);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite alternate;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    bottom: 60px;
+}
+
+
+.gradient-word {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    font-size: 4.5rem;
+    /* line-height: 1; */
+
+    background: linear-gradient(0deg, transparent, rgba(24, 24, 24, .4));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

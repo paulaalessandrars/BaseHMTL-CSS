@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&display=swap);
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    perspective: 300px;
+}
+
+h1 {
+    font-family: 'Quicksand', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.box {
+    background: linear-gradient(90deg, #fc466b, #4658fc);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: example 5s infinite alternate;
+    filter: blur(100px);
+    position: absolute;
+}
+
+
+@keyframes example {
+    0% {
+        transform: rotateY(30deg) rotate(-25deg) translate(100px);
+    }
+
+    25% {
+        transform: rotateY(-30deg) translateZ(100px);
+    }
+
+    50% {
+        transform: rotateX(-50deg) translateZ(-100px);
+    }
+
+    75% {
+        transform: rotateX(-50deg) translateZ(-100px);
+    }
+
+    100% {
+        transform: rotateX(20deg) translateZ(0);
+    }
+}
